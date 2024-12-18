@@ -6,55 +6,108 @@
   <title>The PaSc Wiki</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: #fafafa;
+      color: #444;
+      background-image: url('https://www.transparenttextures.com/patterns/asfalt.png');
+      background-size: cover;
     }
     header {
-      background-color: #333;
+      background-color: #ff6492;
       color: white;
       padding: 20px;
       text-align: center;
+      border-bottom: 5px solid #ff4c6a;
+    }
+    header h1 {
+      font-size: 3em;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
     }
     nav {
-      background-color: #444;
+      background-color: #ff4c6a;
       color: white;
-      padding: 10px;
+      padding: 15px;
+      text-align: center;
     }
     nav a {
       color: white;
-      margin: 0 10px;
+      margin: 0 15px;
       text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
     }
     nav a:hover {
       text-decoration: underline;
     }
     .content {
       margin: 20px;
-      padding: 20px;
+      padding: 30px;
       background-color: white;
-      border-radius: 8px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
     }
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 10px;
+    h2 {
+      color: #ff6492;
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+    .section-title {
+      color: #ff4c6a;
+      font-size: 1.8em;
+      margin-top: 20px;
       text-align: center;
-    }
-    h1, h2 {
-      color: #444;
     }
     .member-list, .history, .events {
       list-style-type: none;
       padding: 0;
+      margin: 0;
     }
     .member-item {
-      padding: 5px 0;
+      background-color: #ffe0eb;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+      font-size: 1.1em;
+      display: flex;
+      align-items: center;
     }
     .member-item:nth-child(even) {
-      background-color: #f9f9f9;
+      background-color: #ffdaea;
+    }
+    .member-item img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+    footer {
+      background-color: #ff4c6a;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .event-item {
+      background-color: #fce4ec;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      font-size: 1.1em;
     }
   </style>
 </head>
@@ -62,7 +115,7 @@
 
   <header>
     <h1>The PaSc Wiki</h1>
-    <p>Formerly known as PaSc Clan</p>
+    <p>Formerly known as PaSc Clan - Where anime dreams come true!</p>
   </header>
 
   <nav>
@@ -75,46 +128,69 @@
   <div class="content">
     <section id="history">
       <h2>History</h2>
-      <p>The PaSc, originally known as PaSc Clan, was founded in 2021 by a group of anime nerds and gamers. Over the years, it has grown into a large community of people where you can express yourself however you want! Our goal is to make an anime, a series like no other. With our large community by our side we can make that possible.</p>
-      <h3>Key Milestones:</h3>
+      <p>The PaSc, formerly known as PaSc Clan, was founded in 2021 by a group of passionate anime fans and gamers. Our journey began with a shared dream: to create an anime series unlike any other. In 2024, we rebranded to *The PaSc*, reflecting our evolution from a clan to a creative collective with big ambitions!</p>
+      <h3 class="section-title">Key Milestones:</h3>
       <ul>
         <li>Founded in 2021</li>
         <li>Rebranded as "The PaSc" in 2024</li>
-        <li>Expanded into [description of group expansion]</li>
+        <li>Expanded into anime production and collaborative projects</li>
+        <li>Community-driven storytelling and character creation</li>
       </ul>
     </section>
 
     <section id="members">
       <h2>Members</h2>
-      <p>Below is a list of key members of The PaSc:</p>
+      <p>Meet the creative minds behind *The PaSc*. These individuals have poured their hearts into making our dream a reality.</p>
       <ul class="member-list">
-        <li class="member-item">Rocko Sparacino - Founder / Leader</li>
-        <li class="member-item">Koah Seaton - Co-Founder / Co-Leader</li>
-        <li class="member-item">João Costa - Art / Animation Department</li>
-        <li class="member-item">Caleb Schiltz - Art / Animation Department</li>
+        <li class="member-item">
+          <img src="https://via.placeholder.com/50" alt="Rocko Sparacino">
+          <div>
+            <strong>Rocko Sparacino</strong> - Founder / Leader<br>
+            A visionary and the heart of *The PaSc*, Rocko is the one who brought this idea to life!
+          </div>
+        </li>
+        <li class="member-item">
+          <img src="https://via.placeholder.com/50" alt="Koah Seaton">
+          <div>
+            <strong>Koah Seaton</strong> - Co-Founder / Co-Leader<br>
+            Koah brings creativity and strategy to the team, helping to shape the future of *The PaSc*.
+          </div>
+        </li>
+        <li class="member-item">
+          <img src="https://via.placeholder.com/50" alt="João Costa">
+          <div>
+            <strong>João Costa</strong> - Art / Animation Department<br>
+            João is the mastermind behind our breathtaking art and animation designs.
+          </div>
+        </li>
+        <li class="member-item">
+          <img src="https://via.placeholder.com/50" alt="Caleb Schiltz">
+          <div>
+            <strong>Caleb Schiltz</strong> - Art / Animation Department<br>
+            Caleb brings dynamic and colorful illustrations to life, giving our anime series its unique style.
+          </div>
+        </li>
       </ul>
     </section>
 
     <section id="events">
       <h2>Events</h2>
-      <p>Throughout the years, The PaSc has participated in or hosted the following events:</p>
-      <ul class="events">
-        <li>N/A - N/A - N/A</li>
-      </ul>
+      <p>Over the years, The PaSc has participated in a variety of anime and gaming events. Here's a list of some of the most notable events we've been a part of:</p>
+      <div class="event-item">N/A - N/A - Still in development</div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>If you want to learn more about The PaSc or get involved, feel free to reach out to us:</p>
+      <p>If you want to learn more about *The PaSc* or get involved, feel free to reach out to us:</p>
       <ul>
-        <li>Email: <a href="mailto:the-pasc@gmail.com">info@thepasc.com</a></li>
+        <li>Email: <a href="mailto:the-pasc@gmail.com">the-pasc@gmail.com</a></li>
         <li>Social Media: <a href="https://the-pasc.fandom.com">Fandom</a></li>
       </ul>
     </section>
   </div>
 
   <footer>
-    <p>&copy; 2024 The PaSc. All Rights Reserved.</p>
+    <p>&copy; 2024 The PaSc. All Rights Reserved. | <a href="https://the-pasc.fandom.com">Fandom Wiki</a></p>
   </footer>
 
 </body>
